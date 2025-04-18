@@ -17,20 +17,33 @@
         </a>
         &nbsp;&nbsp;
         <a href="{{ url_for('all_pages') }}">
-            Pages
+            Meet the Skiing Cats
         </a>
         &nbsp;&nbsp;
         <a href="{{ url_for('about') }}">
             About
         </a>
-    </div>
+        <p>There is so much awesomness about a kitty that can ski. Next, this kitty is learning 
+            how to use the toilet. Then total DOMINATION!!! Muhaha. </div>
+            </p>
+            <code>
+                <button id="myButton">Click Me for a joke!</button>
+                <script>
+                document.getElementById("myButton").addEventListener("click", function() {
+                    alert("Why don't skeletons fight each other? Because they don't have the guts!");
+                });
+                </script>
+                        </code>
+                
+            <img src="{{ url_for('images', image='slalom-sammy') }}">
+
+                                
 
     <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
     <!-- <div class="content"> -->
     <div>
         {% block content %}{{ page_content }}{% endblock %}
     </div>
-
 </body>
 
 </html>
